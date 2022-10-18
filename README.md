@@ -18,7 +18,7 @@ Projeto realizado durante o curso [B7Web](https://b7web.com.br/fullstack/).
 - `npm run preview`
 
 ## :rocket: Tecnologias
-![REACTJS](https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge) ![TYPESCRIPT](https://shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=FFF&style=for-the-badge) 
+![REACTJS](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![TYPESCRIPT](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) 
   
 ## :eyes: Site de demonstração
 ![Githubpages](https://img.shields.io/badge/githubpages-%23000000.svg?style=for-the-badge&logo=github)
