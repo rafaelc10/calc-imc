@@ -15,7 +15,7 @@ Projeto realizado durante o curso [B7Web](https://b7web.com.br/fullstack/).
 - `git clone https://github.com/rafaelc10/react-imc`
 - `npm install`
 #### Para executar
-- `npm run preview`
+- `npm run dev`
 
 ## :rocket: Tecnologias
 ![REACTJS](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![TYPESCRIPT](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) 
