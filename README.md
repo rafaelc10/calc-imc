@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">Calculadora de IMC.<h1>
-    <img width="100%" style="max-width:100%" src="https://github.com/rafaelc10/react-imc/blob/main/src/assets/mockup.png">
+    <img width="100%" style="max-width:100%" src="https://github.com/rafaelc10/calc-imc/blob/main/src/assets/mockup.png">
 <p align="center">
   
 </p>
@@ -23,7 +23,7 @@ Projeto realizado durante o curso [B7Web](https://b7web.com.br/fullstack/).
 ## :eyes: Site de demonstração
 ![Githubpages](https://img.shields.io/badge/githubpages-%23000000.svg?style=for-the-badge&logo=github)
 
-Você pode acessar o site [aqui.](https://rafaelc10.github.io/react-imc/)
+Você pode acessar o site [aqui.](https://rafaelc10.github.io/calc-imc/)
 
 ## :memo: Licença
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
