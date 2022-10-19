@@ -1,3 +1,4 @@
+/*
 *{
   box-sizing: border-box;
 }
@@ -39,7 +40,7 @@ header .headerContainer{
 .container .leftside input{
   width: 100%;
   border: 0;
-  border-bottom: 2px solid rgba(150, 163, 171, 0.5);
+  border-bottom: 2px solid #96a3ab80;
   padding: 10px 3px;
   margin-bottom: 20px;
   outline: none;
@@ -47,6 +48,10 @@ header .headerContainer{
   appearance: textfield;
   -moz-appearance: textfield;
 }
+
+
+
+
 .container .leftside input:disabled{
   cursor: not-allowed;
   opacity: 0.5;
@@ -140,3 +145,4 @@ header .headerContainer{
     grid-template-columns: repeat(1, 1fr);
   }
 }
+*/

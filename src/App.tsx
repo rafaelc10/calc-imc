@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import styles from './App.module.css';
 import image from './assets/imc.jpg'
 import leftArrow from './assets/leftarrow.png'
-import { GridItem } from './components/Grid-Item';
-
+import { GridItem } from './components/Grid-Item/GridItem';
 import { levels, CalculateImc, Level } from './helpers/imc'
+import { DarkMode } from './components/DarkMode';
 
 function App() {
+
   const [heightField, setHeightField] = useState<number>(0);
   const [weightField, setWeightFild] = useState<number>(0);
   const [toShow, setToShow] = useState<Level | null>(null)
@@ -25,23 +25,25 @@ function App() {
     setWeightFild(0);
   }
   return (
-    <div className={styles.main}>
-      <header>
-        <div className={styles.headerContainer}>
+    <div className='pb-10 dark:bg-[#041C32]'>
+      <header className='px-5 lg:p-0'>
+        <div className='max-w-4xl mx-auto my-5 flex justify-between'>
           <img src={image} alt="" width={70} />
+          <DarkMode />
         </div>
       </header>
-      <div className={styles.container}>
-        <div className={styles.leftside}>
-          <h1>Calcule o seu IMC.</h1>
-          <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
-
+      <div className='max-w-4xl mx-auto my-10 flex flex-col md:flex-row px-5 md:p-0'>
+        <div className='flex-1 md:mr-10 m-0'>
+          <h1 className='m-0 text-4xl dark:text-[#ECB365] text-[#3A4B5C]'>Calcule o seu IMC.</h1>
+          <p className='mb-10 text-base dark:text-[#ecb46584] text-[#6A7D8B]'>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
+          
           <input
             type='number'
             placeholder='Digite sua altura. Ex: 1.5 (Em metros)'
             value={heightField > 0 ? heightField : ''} // Como a state começa com 0 o input começará com value 0, Para deixar vazio
             onChange={e => setHeightField(+e.target.value)}
             disabled={toShow ? true : false}
+            className='textField'
           />
           <input
             type='number'
@@ -49,13 +51,14 @@ function App() {
             value={weightField > 0 ? weightField : ''} // Como a state começa com 0 o input começará com value 0, Para deixar vazio
             onChange={e => setWeightFild(+e.target.value)}
             disabled={toShow ? true : false}
+            className='textField'
           />
-          <button onClick={handleCalculate} disabled={toShow ? true : false}>Calcular</button>
+          <button className='botao' onClick={handleCalculate} disabled={toShow ? true : false}>Calcular</button>
         </div>
 
-        <div className={styles.rightside}>
+        <div className='flex flex-1 md:ml-10 md:m-0 mt-7'>
           {!toShow &&
-            <div className={styles.grid}>
+            <div className='flex-1 grid grid-cols-1 sm:grid-cols-2 gap-5'>
               {levels.map((item, key) => (
                 <GridItem key={key} item={item} />
               ))}
@@ -63,8 +66,8 @@ function App() {
           }
 
           {toShow &&
-            <div className={styles.rightBig}>
-              <div className={styles.rightArrow} onClick={handleBackButton}>
+            <div className='flex flex-1'>
+              <div className='rightArrow' onClick={handleBackButton}>
                 <img src={leftArrow} alt="" width={25} />
               </div>
               <GridItem item={toShow} />

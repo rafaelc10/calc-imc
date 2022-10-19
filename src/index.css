@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    input[type='number']::-webkit-outer-spin-button,
+    input[type='number']::-webkit-inner-spin-button,
+    input[type='number'] {
+      appearance: none;
+      -moz-appearance: textfield !important;
+    }
+}
+
+@layer components {
+    .textField {
+        @apply w-full border-solid border-b-2 dark:text-white dark:bg-[#041C32] border-[#96a3ab80] py-2 px-1 mb-5 outline-none text-sm disabled:cursor-not-allowed disabled:opacity-50
+    }
+    .botao {
+        @apply bg-[#227c9d] text-white text-base border-none rounded-xl py-4 px-0 w-full cursor-pointer mt-10 hover:opacity-90 hover:transition-opacity disabled:opacity-50 disabled:cursor-not-allowed
+    }
+}
