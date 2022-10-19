@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-import './DarkMode.css'
 const DarkMode = () => {
     const getTheme = () => {
         return JSON.parse(localStorage.getItem('darkMode') || '{}');

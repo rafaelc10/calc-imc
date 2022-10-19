@@ -11,6 +11,9 @@
 ## :computer: Projeto
 Projeto realizado durante o curso [B7Web](https://b7web.com.br/fullstack/).
 
+#### New ⭐
+- Dark Theme com LocalStorage.
+- TailwindCSS.
 #### Instalação
 - `git clone https://github.com/rafaelc10/react-imc`
 - `npm install`

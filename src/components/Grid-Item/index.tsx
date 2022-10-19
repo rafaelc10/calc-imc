@@ -1,5 +1,4 @@
 import { Level } from '../../helpers/imc';
-import './GridItem.css';
 import upImage from '../../assets/up.png';
 import downImage from '../../assets/down.png';
 

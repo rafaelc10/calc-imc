@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import image from './assets/imc.jpg'
 import leftArrow from './assets/leftarrow.png'
-import { GridItem } from './components/Grid-Item/GridItem';
+import { GridItem } from './components/Grid-Item';
 import { levels, CalculateImc, Level } from './helpers/imc'
 import { DarkMode } from './components/DarkMode';
 
@@ -32,7 +32,7 @@ function App() {
           <DarkMode />
         </div>
       </header>
-      <div className='max-w-4xl mx-auto my-10 flex flex-col md:flex-row px-5 md:p-0'>
+      <div className='max-w-4xl mx-auto my-10 flex flex-col md:flex-row px-5 lg:px-0'>
         <div className='flex-1 md:mr-10 m-0'>
           <h1 className='m-0 text-4xl dark:text-[#ECB365] text-[#3A4B5C]'>Calcule o seu IMC.</h1>
           <p className='mb-10 text-base dark:text-[#ecb46584] text-[#6A7D8B]'>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
